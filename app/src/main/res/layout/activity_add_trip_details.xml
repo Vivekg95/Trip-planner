@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.application.AddTripDetails"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtD4CTHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Provide All Details To Create Trip"
+                android:textAlignment="center"
+                android:textSize="30dp"/>
+
+            <EditText
+                android:id="@+id/edtATSourceLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Source Location"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/edtATDestinationLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Destination Location"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/edtATHaltLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Halt Location"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtCreateTourStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here to select Tour Start Date"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/txtCreateTourBreakfastTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here to select tour breakfast time"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/txtCreateTourLunchTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here to select tour lunch time"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/txtCreateTourDinnerTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here to select tour dinner time"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtCreateTourHeading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Route Type"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgroutetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <RadioButton
+                        android:id="@+id/rbeco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ECO"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/rbfastest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FASTEST"
+                        android:layout_weight="1"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/rbshortest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SHORTEST"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+            </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/sprHotelRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+                <Button
+                    android:id="@+id/btnATViewRoute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Route"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

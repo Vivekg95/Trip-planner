@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Trip Planning</string>
+    <string name="title_activity_start_trip_map">Map</string>
+    <string name="title_activity_nearest_places_map">Map</string>
+</resources>
